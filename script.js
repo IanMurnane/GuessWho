@@ -1,11 +1,10 @@
 const dark = "0.8";
 const light = "0";
 
-const audio = new Audio("sound05.mp3");
-audio.preload = 'auto';
-audio.load();
+let audio;
 
 document.body.addEventListener("click",e => {
+    if (!audio) audio = new Audio("sound05.mp3");
     if (e.target.nodeName !== "SECTION") return;
     audio.cloneNode().play();
     const el = e.target;
