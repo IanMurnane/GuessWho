@@ -24,9 +24,9 @@ img {
 }
 
 .flip {
-    display: inline-block;
+    float: left;
     width: 12.5%;
-    height: 33%;
+    height: 33.333%;
     background: black;
     opacity: 0;  /* important */
 }
